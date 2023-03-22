@@ -14,7 +14,7 @@ namespace UniMindProject
     {
         //this is where the code for the database will be held
         /// <database> 
-        /// I, Paatrick, am wririntg the code on a seperate solution so i can test the database and make sure it fully works before
+        /// I, Patrick, am wririntg the code on a seperate solution so i can test the database and make sure it fully works before
         /// transferring it here.
         /// </database>
         /// <returns></returns>
