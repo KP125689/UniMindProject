@@ -21,5 +21,25 @@ namespace UniMindProject
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string username = username_box.Text;
+            string password = password_box.Text;
+
+            if (username == "sqlusername" && password == "sqlpassword")
+            {
+                MessageBox.Show("login sucessful");
+
+            }
+            else
+
+            {
+                MessageBox.Show("incorrect");
+            
+            }
+            
+            
+        }
     }
 }
