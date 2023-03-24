@@ -41,5 +41,11 @@ namespace UniMindProject
             
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            register registerform = new register();
+            registerform.Show();
+        }
     }
 }
