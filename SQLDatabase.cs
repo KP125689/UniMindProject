@@ -37,7 +37,7 @@ namespace UniMindProject
 
         public static void LoginPageDatabase()
         {
-            GetConnection().Open();  
+          //  GetConnection().Open();  
         }
     }
 }
