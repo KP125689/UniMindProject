@@ -32,23 +32,12 @@ namespace UniMindProject
             conn.Close(); // close the connection 
             return conn;
         }
-        public static void RegisterStudent()
-        {
-            //this is for storing the new students information in the database  
-        }
-        public static void LoginStudent()
-        {
-            //this is for exsiting students to check the log in details match that in the database
-        }
+        
+        
 
         public static void LoginPageDatabase()
         {
-            GetConnection().Open();
-
-            // if button1 clicked:
-            RegisterStudent();
-            //if button2 clicked:
-            LoginStudent();
+            GetConnection().Open();  
         }
     }
 }
