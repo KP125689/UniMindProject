@@ -23,7 +23,7 @@ namespace UniMindProject
             string password = textBox2.Text;
             string rewritePassword = textBox3.Text;
 
-            if (string.IsNullOrEmpty(username))
+            if (string.IsNullOrEmpty(username)) 
             {
                 MessageBox.Show("Please enter a username.");
                 return;
@@ -52,5 +52,7 @@ namespace UniMindProject
             MessageBox.Show("Registration successful.");
         }
     }
-    }
+    
+
+
 }

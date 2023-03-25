@@ -18,7 +18,7 @@ namespace UniMindProject
         [STAThread]
         public static void Main()
         {
-            //SQLDatabase.LoginPageDatabase();
+            SQLDatabase.LoginPageDatabase();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
