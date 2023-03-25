@@ -13,12 +13,25 @@ namespace UniMindProject
     class theDatabase
     {
         //this is where the code for the database will be held
-        /// <database> 
-        /// I, Patrick, am wririntg the code on a seperate solution so i can test the database and make sure it fully works before
-        /// transferring it here.
-        /// </database>
-        /// <returns></returns>
+        public static MySqlConnection GetConnection()
+        {
+            string connStr = "server=localhost;user=root;database=UniMind;port=3306;password=L3tM31n"; //paramenters will change once deployed on cloud
+            MySqlConnection conn = new MySqlConnection(connStr);
+            try
+            {
+                Console.WriteLine("Connecting to MySQL database...");
+                conn.Open();
+                Console.WriteLine("connection successful");
 
+
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("theres been an error");
+            }
+            conn.Close(); // close the connection 
+            return conn;
+        }
     }
 
 
