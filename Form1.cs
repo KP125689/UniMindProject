@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySQL.Data;
 using MySql.Data.MySqlClient;
-
-
+using System.Security.Cryptography.X509Certificates;
+using System.Drawing.Text;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace UniMindProject
 {
@@ -29,21 +30,47 @@ namespace UniMindProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = username_box.Text; 
+           
+            string username = username_box.Text;
             string password = password_box.Text;
 
-         // need to make it read from database !!! and compare values so user can log in!!
+           
+            
+            void sqlstuff()
+            {
+                string connectionString = "server=localhost;user=root;database=UniMind;port=3306;password=L3tM31n";
+                MySqlConnection connection = new MySqlConnection(connectionString);
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = "SELECT username, password FROM userinfo WHERE username = @username AND password = @password";
+                command.Parameters.AddWithValue("@username", username_box.Text);
+                command.Parameters.AddWithValue("@password", password_box.Text);
 
-            string selectUserName = "SELECT username FROM unimind.userinfo WHERE username = @username";
-            string selectPassword = "SELECT password FROM unimind.userinfo WHERE password = @password";
-            if (username == selectUserName && password == selectPassword)
-            {
-                MessageBox.Show("login successful");
+                try
+                {
+                    connection.Open();
+                    MySqlDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        MessageBox.Show("Login successful!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password!");
+                    }
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
             }
-            else
-            {
-                MessageBox.Show("either username or password is incorrect please try again");
-            }
+            sqlstuff();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
