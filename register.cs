@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySqlConnector;
 
 namespace UniMindProject
 {
@@ -22,34 +24,46 @@ namespace UniMindProject
             string username = textBox1.Text;
             string password = textBox2.Text;
             string rewritePassword = textBox3.Text;
+            
 
-            if (string.IsNullOrEmpty(username)) 
+            void sqlRegister()
             {
-                MessageBox.Show("Please enter a username.");
+                string connectionString = "server=localhost;user=root;database=UniMind;port=3306;password=L3tM31n";
+                MySqlConnection connection = new MySqlConnection(connectionString);
+                MySqlCommand command = connection.CreateCommand();
+                command.CommandText = "INSERT INTO userinfo (FirstName, LastName, username, password) VALUES ('', '', @username, @password) ";
+                command.Parameters.AddWithValue("@username", textBox1.Text);
+                command.Parameters.AddWithValue("@password", textBox2.Text);
+
+                try
+                {
+                    connection.Open();
+                    MySqlDataReader reader = command.ExecuteReader();
+                    reader.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+            }
+
+            if (password == rewritePassword)
+            {
+                sqlRegister();
+                MessageBox.Show("Registration successful.");
+            }
+            else
+            {
+                MessageBox.Show("the passwords you entered do not match");
                 return;
             }
 
-            if (string.IsNullOrEmpty(password))
-            {
-                MessageBox.Show("Please enter a password.");
-                return;
-            }
-
-            if (string.IsNullOrEmpty(rewritePassword))
-            {
-                MessageBox.Show("Please rewrite your password.");
-                return;
-            }
-
-            if (password != rewritePassword)
-            {
-                MessageBox.Show("Passwords do not match.");
-                return;
-            }
-
-            // TODO: Save user registration details to a database or file, or perform other registration tasks.
-
-            MessageBox.Show("Registration successful.");
+            
         }
     }
     
