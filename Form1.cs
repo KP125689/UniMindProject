@@ -30,7 +30,8 @@ namespace UniMindProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            insights testform = new insights();
+            testform.Show();
             string username = username_box.Text;
             string password = password_box.Text;
 
@@ -52,6 +53,8 @@ namespace UniMindProject
                     if (reader.Read())
                     {
                         MessageBox.Show("Login successful!");
+                        homepage homepagedisplay = new homepage();
+                        homepagedisplay.Show();
                     }
                     else
                     {
