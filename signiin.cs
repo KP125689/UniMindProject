@@ -14,10 +14,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace UniMindProject
 {
-    public partial class Form1 : Form
+    public partial class signiin : Form
     {
 
-        public Form1()
+        public signiin()
         {
             InitializeComponent();
         }

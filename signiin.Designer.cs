@@ -1,6 +1,6 @@
 ﻿namespace UniMindProject
 {
-    partial class Form1
+    partial class signiin
     {
         /// <summary>
         /// Required designer variable.
