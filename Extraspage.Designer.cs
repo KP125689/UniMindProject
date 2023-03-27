@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Extraspage));
             this.ExtrasPageTitle = new System.Windows.Forms.Label();
             this.JournalHistory = new System.Windows.Forms.Button();
             this.Meditations = new System.Windows.Forms.Button();
@@ -45,12 +46,12 @@
             this.ExtrasPageTitle.AutoSize = true;
             this.ExtrasPageTitle.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ExtrasPageTitle.Enabled = false;
-            this.ExtrasPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ExtrasPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExtrasPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.ExtrasPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExtrasPageTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ExtrasPageTitle.Location = new System.Drawing.Point(130, 27);
             this.ExtrasPageTitle.Name = "ExtrasPageTitle";
-            this.ExtrasPageTitle.Size = new System.Drawing.Size(147, 58);
+            this.ExtrasPageTitle.Size = new System.Drawing.Size(142, 58);
             this.ExtrasPageTitle.TabIndex = 0;
             this.ExtrasPageTitle.Text = "Extra";
             this.ExtrasPageTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -114,6 +115,7 @@
             this.SpeakToSomeone.Text = "Speak to Someone";
             this.SpeakToSomeone.UseVisualStyleBackColor = false;
             this.SpeakToSomeone.Click += new System.EventHandler(this.SpeakToSomeone_click);
+            
             // 
             // GetSocial
             // 
@@ -147,8 +149,9 @@
             // 
             // Homebutton
             // 
-            this.Homebutton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Homebutton.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Homebutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.Homebutton.Image = ((System.Drawing.Image)(resources.GetObject("Homebutton.Image")));
             this.Homebutton.Location = new System.Drawing.Point(158, 531);
             this.Homebutton.Name = "Homebutton";
             this.Homebutton.Size = new System.Drawing.Size(84, 39);
@@ -172,8 +175,8 @@
             this.Controls.Add(this.JournalHistory);
             this.Controls.Add(this.ExtrasPageTitle);
             this.Name = "Extraspage";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ExtrasPage";
             ((System.ComponentModel.ISupportInitialize)(this.Homebutton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -156,19 +156,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeakToSomeone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpeakToSomeone.Designer.cs">
+      <DependentUpon>SpeakToSomeone.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Extraspage.resx">
       <DependentUpon>Extraspage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="SpeakToSomeone.resx">
+      <DependentUpon>SpeakToSomeone.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -184,16 +193,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\60817.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\png-clipart-black-house-house-computer-icons-home-automation-kits-real-estate-home-icon-angle-building.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\1946488.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\201-2010871_home-icon-png-home-house-icon-website-home-logo.png" />
+    <Content Include="Resources\60817.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

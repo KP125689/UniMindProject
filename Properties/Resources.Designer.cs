@@ -63,40 +63,9 @@ namespace UniMindProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1946488 {
-            get {
-                object obj = ResourceManager.GetObject("1946488", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _201_2010871_home_icon_png_home_house_icon_website_home_logo {
-            get {
-                object obj = ResourceManager.GetObject("201-2010871_home-icon-png-home-house-icon-website-home-logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _60817 {
             get {
                 object obj = ResourceManager.GetObject("60817", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap png_clipart_black_house_house_computer_icons_home_automation_kits_real_estate_home_icon_angle_building {
-            get {
-                object obj = ResourceManager.GetObject("png-clipart-black-house-house-computer-icons-home-automation-kits-real-estate-hom" +
-                        "e-icon-angle-building", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
