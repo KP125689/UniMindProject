@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpeakToSomeone));
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -37,10 +38,12 @@
             this.HullSSButton = new System.Windows.Forms.Button();
             this.UniwellbeingButton = new System.Windows.Forms.Button();
             this.ChildlineButtppn = new System.Windows.Forms.Button();
+            this.backarrow2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backarrow2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -139,10 +142,22 @@
             this.ChildlineButtppn.UseVisualStyleBackColor = false;
             this.ChildlineButtppn.Click += new System.EventHandler(this.Childline_click);
             // 
+            // backarrow2
+            // 
+            this.backarrow2.Image = ((System.Drawing.Image)(resources.GetObject("backarrow2.Image")));
+            this.backarrow2.Location = new System.Drawing.Point(19, 519);
+            this.backarrow2.Name = "backarrow2";
+            this.backarrow2.Size = new System.Drawing.Size(49, 50);
+            this.backarrow2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.backarrow2.TabIndex = 10;
+            this.backarrow2.TabStop = false;
+            this.backarrow2.Click += new System.EventHandler(this.backarrow2_click);
+            // 
             // SpeakToSomeone
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(422, 581);
+            this.Controls.Add(this.backarrow2);
             this.Controls.Add(this.ChildlineButtppn);
             this.Controls.Add(this.UniwellbeingButton);
             this.Controls.Add(this.HullSSButton);
@@ -158,6 +173,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backarrow2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -178,5 +194,6 @@
         private System.Windows.Forms.Button samaritansButton;
         private System.Windows.Forms.Button HullSSButton;
         private System.Windows.Forms.Button ChildlineButtppn;
+        private System.Windows.Forms.PictureBox backarrow2;
     }
 }

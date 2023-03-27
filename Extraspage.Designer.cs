@@ -37,7 +37,9 @@
             this.GetSocial = new System.Windows.Forms.Button();
             this.EmergencyContact = new System.Windows.Forms.Button();
             this.Homebutton = new System.Windows.Forms.PictureBox();
+            this.backArrow1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Homebutton)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backArrow1)).BeginInit();
             this.SuspendLayout();
             // 
             // ExtrasPageTitle
@@ -115,7 +117,6 @@
             this.SpeakToSomeone.Text = "Speak to Someone";
             this.SpeakToSomeone.UseVisualStyleBackColor = false;
             this.SpeakToSomeone.Click += new System.EventHandler(this.SpeakToSomeone_click);
-            
             // 
             // GetSocial
             // 
@@ -160,12 +161,24 @@
             this.Homebutton.TabStop = false;
             this.Homebutton.Click += new System.EventHandler(this.HomeButton_Click);
             // 
+            // backArrow1
+            // 
+            this.backArrow1.Image = ((System.Drawing.Image)(resources.GetObject("backArrow1.Image")));
+            this.backArrow1.Location = new System.Drawing.Point(26, 27);
+            this.backArrow1.Name = "backArrow1";
+            this.backArrow1.Size = new System.Drawing.Size(71, 73);
+            this.backArrow1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.backArrow1.TabIndex = 8;
+            this.backArrow1.TabStop = false;
+            this.backArrow1.Click += new System.EventHandler(this.backarrowClick);
+            // 
             // Extraspage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(417, 582);
+            this.Controls.Add(this.backArrow1);
             this.Controls.Add(this.Homebutton);
             this.Controls.Add(this.EmergencyContact);
             this.Controls.Add(this.GetSocial);
@@ -178,6 +191,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ExtrasPage";
             ((System.ComponentModel.ISupportInitialize)(this.Homebutton)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backArrow1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +207,7 @@
         private System.Windows.Forms.Button GetSocial;
         private System.Windows.Forms.Button EmergencyContact;
         private System.Windows.Forms.PictureBox Homebutton;
+        private System.Windows.Forms.PictureBox backArrow1;
     }
 }
 

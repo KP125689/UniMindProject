@@ -36,5 +36,10 @@ namespace UniMindProject
         {
 
         }
+
+        private void backarrow2_click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
