@@ -86,12 +86,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(338, 466);
+            this.ClientSize = new System.Drawing.Size(423, 583);
             this.Controls.Add(this.backArrow3);
             this.Controls.Add(this.descLabel);
             this.Controls.Add(this.companyinfo);
             this.Controls.Add(this.samaritansLabel);
             this.Name = "Samaritan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Samaritan";
             this.Load += new System.EventHandler(this.Samaritan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.backArrow3)).EndInit();
