@@ -34,7 +34,8 @@ namespace UniMindProject
 
         private void Samaritans_click(object sender, EventArgs e)
         {
-
+            Samaritan samaritan = new Samaritan();
+            samaritan.Show();
         }
 
         private void backarrow2_click(object sender, EventArgs e)

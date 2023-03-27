@@ -161,6 +161,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Samaritan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Samaritan.Designer.cs">
+      <DependentUpon>Samaritan.cs</DependentUpon>
+    </Compile>
     <Compile Include="SpeakToSomeone.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Samaritan.resx">
+      <DependentUpon>Samaritan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SpeakToSomeone.resx">
       <DependentUpon>SpeakToSomeone.cs</DependentUpon>
@@ -197,7 +206,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\60817.png" />
-    <Content Include="Resources\images %282%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
