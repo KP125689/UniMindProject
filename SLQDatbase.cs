@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data;
-using MySqlConnector;
+using MySql.Data.MySqlClient;
+
+
 namespace UniMindProject
 {
     public class SLQDatbase
