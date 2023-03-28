@@ -18,10 +18,10 @@ namespace UniMindProject
         [STAThread]
         public static void Main()
         {
-            SQLDatabase.LoginPageDatabase();
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new signiin());
+            Application.Run(new Extraspage());
         }
     }
 }

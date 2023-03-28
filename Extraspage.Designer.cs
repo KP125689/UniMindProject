@@ -51,7 +51,7 @@
             this.ExtrasPageTitle.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.ExtrasPageTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExtrasPageTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ExtrasPageTitle.Location = new System.Drawing.Point(110, 34);
+            this.ExtrasPageTitle.Location = new System.Drawing.Point(156, 34);
             this.ExtrasPageTitle.Name = "ExtrasPageTitle";
             this.ExtrasPageTitle.Size = new System.Drawing.Size(142, 58);
             this.ExtrasPageTitle.TabIndex = 0;
@@ -177,7 +177,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(333, 465);
+            this.ClientSize = new System.Drawing.Size(424, 623);
             this.Controls.Add(this.backArrow1);
             this.Controls.Add(this.Homebutton);
             this.Controls.Add(this.EmergencyContact);

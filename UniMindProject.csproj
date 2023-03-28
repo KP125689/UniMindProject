@@ -167,6 +167,7 @@
     <Compile Include="Samaritan.Designer.cs">
       <DependentUpon>Samaritan.cs</DependentUpon>
     </Compile>
+    <Compile Include="SLQDatbase.cs" />
     <Compile Include="SpeakToSomeone.cs">
       <SubType>Form</SubType>
     </Compile>
